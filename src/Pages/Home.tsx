@@ -1,10 +1,12 @@
 import React from 'react'
+import Flex from '../Layouts/Flex';
+import Banner from '../Components/Molecules/Banner';
 
 const Home = () => {
     return(
-        <div>
-            My name is sazzad mahmud tusher
-        </div>
+        <Flex className='w-full'>
+            <Banner/>
+        </Flex>
     )
 }
 
