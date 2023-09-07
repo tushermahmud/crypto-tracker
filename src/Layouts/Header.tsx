@@ -1,10 +1,11 @@
-import React, {useState } from "react";
+import React from "react";
 import Flex from "./Flex";
 import Logo from "../Assets/logo/Logo.png";
 import Image from "../Components/Atoms/Image";
 import SelectCurrency from "../Components/Atoms/SelectCurrency";
 import Button from "../Components/Atoms/Button";
 import { useNavigate } from "react-router-dom";
+import { CryptoState } from "../Contexts/CryptoContext";
 
 const Header = () => {
     const navigate = useNavigate();
@@ -15,10 +16,10 @@ const Header = () => {
         {
             value: "USD"
         }
-    ]
-    const [currency, setCurrency] = useState<string>(options[0].value);
+    ];
+    const {currency, setCurrency, symbol} = CryptoState();
     const handleChange = (value:string) => {
-        setCurrency(value)
+        if(setCurrency) setCurrency(value);
     }
     const handleClick = () => {
 

@@ -1,7 +1,7 @@
 import React from "react";
 
 type Props = {
-    value: string;
+    value?: string;
     options: any[] | [];
     onChange: (value: string) => void;
     classname?: string;

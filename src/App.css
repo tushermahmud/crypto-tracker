@@ -28,6 +28,10 @@
   color: #61dafb;
 }
 
+.banner {
+  background-image: url("./Assets/images/banner2.jpg");
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
