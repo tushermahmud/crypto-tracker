@@ -8,6 +8,8 @@ module.exports = {
       primary: "#14161A",
       white: "#FFFFFF",
       secondary: "#E6B17E",
+      success: '#0ECB81',
+      error: '#ff0000',
       'blue': '#1fb6ff',
       'purple': '#7e5bef',
       'pink': '#ff49db',
