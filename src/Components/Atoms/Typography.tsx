@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {
     className: string;
-    text: string;
+    text: string | number;
 }
 
 const Typography = ({className, text}:Props) => {

@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
-import Header from './Layouts/Header';
+import Header from './Components/Layouts/Header';
 import CoinDetails from './Pages/CoinDetails';
-import Grid from './Layouts/Grid';
+import Grid from './Components/Layouts/Grid';
 
 function App() {
   return (

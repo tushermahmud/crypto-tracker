@@ -1,11 +1,11 @@
 import React from "react";
 import Flex from "./Flex";
-import Logo from "../Assets/logo/Logo.png";
-import Image from "../Components/Atoms/Image";
-import SelectCurrency from "../Components/Atoms/SelectCurrency";
-import Button from "../Components/Atoms/Button";
+import Logo from "../../Assets/logo/Logo.png";
+import Image from "../Atoms/Image";
+import SelectCurrency from "../Atoms/SelectCurrency";
+import Button from "../Atoms/Button";
 import { useNavigate } from "react-router-dom";
-import { CryptoState } from "../Contexts/CryptoContext";
+import { CryptoState } from "../../Contexts/CryptoContext";
 
 const Header = () => {
     const navigate = useNavigate();
