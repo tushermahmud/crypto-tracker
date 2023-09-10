@@ -3,13 +3,13 @@ import axios from "axios";
 import { TrendingCoins } from "../config/api";
 import { CryptoState } from "../Contexts/CryptoContext";
 import { Coins } from "../types/types";
-
+import { data } from "../Components/data";
 const useBannerCoins = () => {
-    const {currency} = CryptoState()
+    const {currency, symbol} = CryptoState()
     const [bannerCoins, setBannerCoins] = useState<Coins[]|null>(null);
     const fetchBannerCoins = async() => {
         try {
-            const {data} = await axios.get(TrendingCoins(currency))
+            // const {data} = await axios.get(TrendingCoins(currency))
             setBannerCoins(data)
         } catch (error) {
             if (error instanceof Error)
@@ -20,7 +20,7 @@ const useBannerCoins = () => {
     useEffect(()=>{
         fetchBannerCoins();
     },[])
-    return {bannerCoins}
+    return {bannerCoins, symbol}
 
 }
 
